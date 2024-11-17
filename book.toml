@@ -15,7 +15,9 @@ enable = true
 git-repository-url = "https://github.com/rust-lang/rust-by-example"
 additional-css = [
   "theme/css/language-picker.css",
+  "theme/whichlang.css"
 ]
+additional-js = ["theme/whichlang.js"]
 
 [rust]
 edition = "2021"
@@ -24,4 +26,13 @@ edition = "2021"
 extra-watch-dirs = ["po"]
 
 [preprocessor.gettext]
+after = ["links"]
+
+[preprocessor.yml-header]
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[preprocessor.katex]
 after = ["links"]
