@@ -3,6 +3,10 @@ title = "Rust By Example"
 description = "Rust by Example (RBE) is a collection of runnable examples that illustrate various Rust concepts and standard libraries."
 author = "The Rust Community"
 
+[output]  
+# 这里的 base-url 应该是您的 GitHub Pages 地址  
+base-url = "https://vendestine.github.io/blog-mdbook"  
+
 [output.html.playpen]
 editable = true
 editor = "ace"
